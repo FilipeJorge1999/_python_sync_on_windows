@@ -13,7 +13,7 @@ if os.path.exists('config.txt'):
 LOG = 'log.txt'
 
 
-# functions -------------------------------------------------------------
+# functions ######################################################################################################
 
 
 def compare2file(file1, file2):
@@ -51,7 +51,7 @@ def compareHashFolder(folder, backup):
             return False
     return True
 
-#------------------------------------------------------------------
+######################################################################################################
 log('Start')
 
 if os.path.isfile('config.txt'):
@@ -88,7 +88,8 @@ else:
     log('config file: CREATED')
 
 # run loop every 30 seconds
-
+#sync 
+#####################################################################################################
 while True:
     # check if folder is same with backup
     if compareHashFolder(folder, backup):
